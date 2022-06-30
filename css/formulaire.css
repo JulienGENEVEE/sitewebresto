@@ -1,33 +1,38 @@
+@font-face {
+	font-family: "chocolat";
+	src: url("/dafont/chocolate_5/Chocolate.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "american";
+	src: url("/dafont/american_signs/American\ Signs.otf") format("truetype")
+}
+
 body{
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    background: linear-gradient(rgb(132, 3, 149), rgb(192, 255, 220));
     font-family: Arial, sans-serif;
-    color: white;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
 }
 
 header{
-    background-color: blue;
-    background-image:url(images/restaurant.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position : absolute;
-    overflow: auto;
-    height: 20%px;
+    border: dashed 15px black;
+    border-style: dashed solid;
+    font-family: "american";
+    height: 200px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
-header .menu{
-    margin: auto;
-    margin-bottom: 10px;
-    align-items: center; 
+header .lien{
+    margin: 140px 0px 0px 0px;
 }
 
 header ul{
     list-style-type: none;
-    padding: 0px;
+    padding: 5px;
     text-decoration: none;
 }
 
@@ -38,12 +43,12 @@ header li{
 
 header a:visited{
     color: white;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 header a:link{
     color: white;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 header a:hover{
@@ -51,5 +56,19 @@ header a:hover{
     border-radius: 10px;
     text-transform: uppercase;
     color: red;
-    font-size: 20px;
+    font-size: 35px;
+}
+
+.nom{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(241, 223, 229);
+    font-weight: bolder;
+}
+
+form{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
 }
