@@ -23,11 +23,12 @@ header{
     height: 200px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 header .lien{
-    margin: 140px 0px 0px 0px;
+    margin: 0px 0px 0px 65%;
 }
 
 header ul{
@@ -43,12 +44,12 @@ header li{
 
 header a:visited{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header a:link{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header a:hover{
@@ -56,7 +57,7 @@ header a:hover{
     border-radius: 10px;
     text-transform: uppercase;
     color: red;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .nom{

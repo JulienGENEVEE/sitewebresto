@@ -79,6 +79,7 @@ header a:hover{
     display: flex;
     justify-content: space-around;
     border-radius: 15px;
+    margin-left: 10%;
 }
 
 .image_nourriture{
@@ -93,6 +94,7 @@ h3{
 
 nav{
     margin: 0px 45px 0px 0px;
+    position: fixed;
 }
 
 nav li{
@@ -106,6 +108,7 @@ nav li{
 }
 
 #bouton_entree{
+    cursor: pointer;
     font-size: 25px;
     background-image: url("/images/entree_boutonm.jpg");
 }
@@ -115,6 +118,7 @@ nav li{
 }
 
 #bouton_plat{
+    cursor: pointer;
     font-size: 25px;
     background-image: url("/images/plat_boutonm.jpg");
 }
