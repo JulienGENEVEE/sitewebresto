@@ -1,36 +1,33 @@
-@font-face {
-	font-family: "chocolat";
-	src: url(‘/dafont/chocolat.ttf’) format(‘truetype’)
-}
-
 body{
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100% 100%;
     font-family: Arial, sans-serif;
     color: white;
 }
 
 header{
-    background-image:url(../images/bannière.jpg);
+    background-color: blue;
+    background-image:url(images/restaurant.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 200px;
+    position : absolute;
+    overflow: auto;
+    height: 20%px;
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    
 }
 
-header .lien{
+header .menu{
     margin: auto;
     margin-bottom: 10px;
+    align-items: center; 
 }
 
 header ul{
     list-style-type: none;
-    padding: 5px;
+    padding: 0px;
     text-decoration: none;
 }
 
@@ -55,39 +52,4 @@ header a:hover{
     text-transform: uppercase;
     color: red;
     font-size: 20px;
-}
-
-.nom{
-    font-size: 50px;
-    color: rgb(164, 10, 87);
-    font-weight: bolder;
-}
-
-#page{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-nav{
-    background-color: aliceblue;
-    width:10%;
-}
-
-input{
-    background-color: blue;
-}
-
-nav li{
-    list-style-type: none;
-}
-
-#presentation{
-    background-color: aqua;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
-h3{
-    font-family: "chocolat" ;
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Formulaire de contact</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/formulaire.css"/>
+        <script language="javascript" type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <header class="header_flex">
+        <div class="logo_nom">
+            <div class="image">
+                <img src="images/restaurant.jpg" name="logo" id="Le Logo"/>
+            </div>
+
+            <div class="nom_prenom">
+                <p>Restaurant Relais Fleuri</p>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" target="_blank">Accueil</a></li>
+                <li><a href="Formulaire.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <hr size="15" color="black">
+    
+    <div class="formulaire">
+        <form method="post">
+            <fieldset>
+                <h3>Contactez-nous</h3>
+                <p>
+                    Un problème, une question, envie de nous envoyez un message ? N'hésitez pas à utiliser ce formulaire
+                    pour prendre contact avec nous !
+                </p>
+
+                <label for="votre nom">Votre nom</label>
+                <br/>
+                <input type="text" name="votre_nom" id="votre_nom" placeholder="Votre nom"/>
+
+                <br/>
+
+                <label for="votre_email">Votre e-mail</label>
+                <br/>
+                <input type="text" name="votre_email" id="votre_email" placeholder="Votre e-mail"/>
+
+                <br/>
+
+                <label for="sujet_du_message">Sujet du message</label>
+                <br/>
+                <input type="text" name="sujet_du_message" id="sujet_de_message" placeholder="Le sujet de votre message"/>
+
+                <br/>
+
+                <label for="votre_message">Votre message</label>
+                <br/>
+                <textarea class="votre_message" name="votre_message" id="votre_message" rows="5" cols="25" placeholder="Votre message ici ..."></textarea>
+                
+                <br/>
+
+                <input type="submit" name="Envoyer" id="envoyer"/>
+            
+            </fieldset>
+        </form>
+    </div>
+
+    <hr size="15" color="black">
+
+</body>
+
+<footer>
+    <center><p>Copyright © 2022. All right reserved.</p></center>
+</footer>
+</html>
