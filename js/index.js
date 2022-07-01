@@ -1,34 +1,57 @@
-let entree = getElementById("entree");
-let plat = getElementById("plat");
-let dessert = getElementById("dessert");
+// bouton dans index //
 
+let b_entree = document.getElementById("bouton_entree");
+let b_plat = document.getElementById("bouton_plat");
+let b_dessert = document.getElementById("bouton_dessert");
 
-function entree(){
-    if ()
+let entree = document.getElementById("entree");
+let plat = document.getElementById("plat");
+let dessert = document.getElementById("dessert");
+
+b_entree.addEventListener("click", () => {
+    entree.style.display = "block";
+    plat.style.display = "none";
+    dessert.style.display = "none";
 }
+)
+
+b_plat.addEventListener("click", () => {
+    entree.style.display = "none";
+    plat.style.display = "block";
+    dessert.style.display = "none";
+}
+)
+
+b_dessert.addEventListener("click", () => {
+    entree.style.display = "none";
+    plat.style.display = "none";
+    dessert.style.display = "block";
+}
+)
+
+// e-mail verif //
 
 var users = [
-    {email: "AAAAA@gmail.fr", mdp:"ZZZZZ"},
-    {email: "BBBBB@hotmail.be", mdp:"YYYYY"},
-    {email: "CCCCC@yahoo.com", mdp:"XXXXX"},
-    {email: "DDDDD@msn.net", mdp:"WWWWW"},
-    {email: "EEEEE@orange.fr", mdp:"VVVVV"},
+    {email: "AAAAA@gmail.fr"},
+    {email: "BBBBB@hotmail.be"},
+    {email: "CCCCC@yahoo.com"},
+    {email: "DDDDD@msn.net"},
+    {email: "EEEEE@orange.fr"},
 ]
 
 function verifCompte(){
     let emailTxt = document.getElementById("email").value;
-    let mdpTxt = document.getElementById("mdp").value;
     let info = document.getElementById("connexionInfo");
 
     validageEmail()
  
     for (let i=0; i<users.length;i++){
-        if(users[i].email == emailTxt && users[i].mdp == mdpTxt){
+        if(users[i].email == emailTxt){
             info.innerHTML="Connexion";
             break;
         }
-        else if(users[i].email != emailTxt || users[i].mdp != mdpTxt){
-            info.innerHTML="Email ou mot de passe incorrectes";
+        else if(users[i].email != emailTxt){
+            info.innerHTML="Email incorrectes";
         }
     }
 }

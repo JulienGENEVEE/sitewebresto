@@ -12,11 +12,12 @@ body{
     background: linear-gradient(rgb(132, 3, 149), rgb(192, 255, 220));
     font-family: Arial, sans-serif;
     width: 90%;
-    height: 100vh;
+    height: 100%;
     margin: auto;
 }
 
 header{
+    background: linear-gradient(white, black);
     border: dashed 15px black;
     border-style: dashed solid;
     font-family: "american";
